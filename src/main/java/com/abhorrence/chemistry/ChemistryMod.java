@@ -1,10 +1,12 @@
 package com.abhorrence.chemistry;
 
+import com.abhorrence.chemistry.registry.ModGases;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -39,6 +41,11 @@ public class ChemistryMod
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        IEventBus modEventBus =
+                FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModGases.GASES.register(modEventBus);
     }
 
     private void setup(final FMLCommonSetupEvent event)
