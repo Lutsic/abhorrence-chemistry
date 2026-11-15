@@ -2,6 +2,7 @@
 package com.abhorrence.chemistry.registry;
 
 import com.abhorrence.chemistry.ChemistryMod;
+import com.abhorrence.chemistry.block.SolidSubstanceBlock;
 import com.abhorrence.chemistry.substance.SubstanceCatalog;
 import net.minecraft.block.Block;
 import net.minecraft.block.FlowingFluidBlock;
@@ -27,7 +28,19 @@ public class ModBlocks {
                                     .noCollission()
                                     .strength(100.0F)
                                     .noDrops(),
-                            SubstanceCatalog.HYDROGEN
+                            SubstanceCatalog.HYDROGEN,
+                            ModBlocks.SOLID_HYDROGEN
+                    )
+            );
+
+    public static final RegistryObject<Block> SOLID_HYDROGEN =
+            BLOCKS.register("solid_hydrogen",
+                    () -> new SolidSubstanceBlock(
+                            Block.Properties.of(Material.STONE)
+                                    .strength(0.5F)
+                                    .requiresCorrectToolForDrops(),
+                            SubstanceCatalog.HYDROGEN,
+                            ModBlocks.HYDROGEN
                     )
             );
 }

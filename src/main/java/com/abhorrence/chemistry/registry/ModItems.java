@@ -2,10 +2,7 @@
 package com.abhorrence.chemistry.registry;
 
 import com.abhorrence.chemistry.ChemistryMod;
-import net.minecraft.item.BucketItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.Items;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.RegistryObject;
@@ -25,7 +22,16 @@ public class ModItems {
                             new Item.Properties()
                                     .craftRemainder(Items.BUCKET)
                                     .stacksTo(1)
-                                    .tab(ItemGroup.TAB_MISC)
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
+
+    public static final RegistryObject<Item> SOLID_HYDROGEN =
+            ITEMS.register("solid_hydrogen",
+                    () -> new BlockItem(
+                            ModBlocks.SOLID_HYDROGEN.get(),
+                            new Item.Properties()
+                                    .tab(ModItemGroups.CHEMISTRY)
                     )
             );
 }

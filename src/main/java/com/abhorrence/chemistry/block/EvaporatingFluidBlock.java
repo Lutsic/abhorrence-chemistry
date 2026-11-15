@@ -3,7 +3,7 @@ package com.abhorrence.chemistry.block;
 
 import com.abhorrence.chemistry.substance.Substance;
 import com.abhorrence.chemistry.world.PhaseTransitionHandler;
-
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.fluid.FlowingFluid;
@@ -17,14 +17,18 @@ import java.util.function.Supplier;
 public class EvaporatingFluidBlock extends FlowingFluidBlock {
 
     private final Substance substance;
+    private final Supplier<? extends Block> solidBlock;
 
     public EvaporatingFluidBlock(
             Supplier<? extends FlowingFluid> fluid,
             Properties properties,
-            Substance substance
+            Substance substance,
+            Supplier<? extends Block> solidBlock
     ) {
         super(fluid, properties);
+
         this.substance = substance;
+        this.solidBlock = solidBlock;
     }
 
     @Override
@@ -38,11 +42,8 @@ public class EvaporatingFluidBlock extends FlowingFluidBlock {
         super.onPlace(state, world, pos, oldState, isMoving);
 
         if (oldState.getBlock() != this) {
-            PhaseTransitionHandler.scheduleEvaporation(
-                    world,
-                    pos,
-                    this,
-                    substance
+            PhaseTransitionHandler.scheduleFluidTransition(
+                    world, pos, this, substance, solidBlock
             );
         }
     }
@@ -54,12 +55,8 @@ public class EvaporatingFluidBlock extends FlowingFluidBlock {
             BlockPos pos,
             Random random
     ) {
-        PhaseTransitionHandler.handleEvaporation(
-                world,
-                pos,
-                state,
-                this,
-                substance
+        PhaseTransitionHandler.handleFluidTransition(
+                world, pos, this, substance, solidBlock
         );
     }
 }

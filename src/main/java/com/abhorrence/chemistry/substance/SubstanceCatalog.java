@@ -20,7 +20,7 @@ public class SubstanceCatalog {
                     13.99,
                     20.271,
                     MekanismGases.HYDROGEN,
-                    new ThermalProperties(40)
+                    new ThermalProperties(40, 40)
             )
     );
 
@@ -32,7 +32,7 @@ public class SubstanceCatalog {
                     54.36,
                     90.19,
                     MekanismGases.OXYGEN,
-                    new ThermalProperties(40)
+                    new ThermalProperties(60, 60)
             )
     );
 
