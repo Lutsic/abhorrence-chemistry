@@ -1,11 +1,11 @@
 
-package com.abhorrence.chemistry;
+package com.abhorrence.chemistry.substance;
 
 import net.minecraft.util.ResourceLocation;
 
 import java.util.HashMap;
 import java.util.Map;
-import com.abhorrence.chemistry.registry.ModGases;
+
 import mekanism.common.registries.MekanismGases;
 
 public class SubstanceCatalog {
@@ -19,7 +19,8 @@ public class SubstanceCatalog {
                     "H2",
                     13.99,
                     20.271,
-                    MekanismGases.HYDROGEN
+                    MekanismGases.HYDROGEN,
+                    new ThermalProperties(40)
             )
     );
 
@@ -30,7 +31,8 @@ public class SubstanceCatalog {
                     "O2",
                     54.36,
                     90.19,
-                    MekanismGases.OXYGEN
+                    MekanismGases.OXYGEN,
+                    new ThermalProperties(40)
             )
     );
 

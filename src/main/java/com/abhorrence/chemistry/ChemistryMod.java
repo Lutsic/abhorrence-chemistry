@@ -1,6 +1,9 @@
 package com.abhorrence.chemistry;
 
+import com.abhorrence.chemistry.registry.ModBlocks;
+import com.abhorrence.chemistry.registry.ModFluids;
 import com.abhorrence.chemistry.registry.ModGases;
+import com.abhorrence.chemistry.registry.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -46,6 +49,9 @@ public class ChemistryMod
                 FMLJavaModLoadingContext.get().getModEventBus();
 
         ModGases.GASES.register(modEventBus);
+        ModFluids.FLUIDS.register(modEventBus);
+        ModBlocks.BLOCKS.register(modEventBus);
+        ModItems.ITEMS.register(modEventBus);
     }
 
     private void setup(final FMLCommonSetupEvent event)
