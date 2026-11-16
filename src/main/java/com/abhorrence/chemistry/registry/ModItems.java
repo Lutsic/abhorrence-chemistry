@@ -34,4 +34,40 @@ public class ModItems {
                                     .tab(ModItemGroups.CHEMISTRY)
                     )
             );
+
+    public static final RegistryObject<Item> SOLID_HYDROGEN_ITEM =
+            ITEMS.register("solid_hydrogen_item",
+                    () -> new Item(
+                            new Item.Properties()
+                            .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
+
+    public static final RegistryObject<Item> HELIUM_BUCKET =
+            ITEMS.register("helium_bucket",
+                    () -> new BucketItem(
+                            ModFluids.HELIUM,
+                            new Item.Properties()
+                                    .craftRemainder(Items.BUCKET)
+                                    .stacksTo(1)
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
+
+    public static final RegistryObject<Item> SOLID_HELIUM =
+            ITEMS.register("solid_helium",
+                    () -> new BlockItem(
+                            ModBlocks.SOLID_HELIUM.get(),
+                            new Item.Properties()
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
+
+    public static final RegistryObject<Item> SOLID_HELIUM_ITEM =
+            ITEMS.register("solid_helium_item",
+                    () -> new Item(
+                            new Item.Properties()
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
 }

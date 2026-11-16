@@ -1,0 +1,16 @@
+{
+  "itemGroup.chemistry": "Abhorrence: Химия",
+
+  "item.chemistry.hydrogen_bucket": "Ведро водорода",
+  "block.chemistry.solid_hydrogen": "Блок кристаллов водорода",
+  "item.chemistry.solid_hydrogen_item": "Кучка кристаллов водорода",
+  "block.chemistry.hydrogen": "Жидкий водород",
+  "fluid.chemistry.hydrogen": "Жидкий водород",
+
+  "item.chemistry.helium_bucket": "Ведро гелия",
+  "block.chemistry.solid_helium": "Блок кристаллов гелия",
+  "item.chemistry.solid_helium_item": "Кучка кристаллов гелия",
+  "block.chemistry.helium": "Жидкий гелий",
+  "fluid.chemistry.helium": "Жидкий гелий",
+  "gas.chemistry.helium": "Гелий"
+}

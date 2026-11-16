@@ -1,0 +1,16 @@
+{
+  "itemGroup.chemistry": "Abhorrence: Chemistry",
+
+  "item.chemistry.hydrogen_bucket": "Hydrogen Bucket",
+  "block.chemistry.solid_hydrogen": "Block of Hydrogen Crystals",
+  "item.chemistry.solid_hydrogen_item": "Pile of Hydrogen Crystals",
+  "block.chemistry.hydrogen": "Liquid Hydrogen",
+  "fluid.chemistry.hydrogen": "Liquid Hydrogen",
+
+  "item.chemistry.helium_bucket": "Helium Bucket",
+  "block.chemistry.solid_helium": "Block of Helium Crystals",
+  "item.chemistry.solid_helium_item": "Pile of Helium Crystals",
+  "block.chemistry.helium": "Liquid Helium",
+  "fluid.chemistry.helium": "Liquid Helium",
+  "gas.chemistry.helium": "Helium"
+}

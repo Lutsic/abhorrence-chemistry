@@ -43,4 +43,28 @@ public class ModBlocks {
                             ModBlocks.HYDROGEN
                     )
             );
+
+    public static final RegistryObject<FlowingFluidBlock> HELIUM =
+            BLOCKS.register("helium",
+                    () -> new EvaporatingFluidBlock(
+                            ModFluids.HELIUM,
+                            Block.Properties.of(Material.WATER)
+                                    .noCollission()
+                                    .strength(100.0F)
+                                    .noDrops(),
+                            SubstanceCatalog.HELIUM,
+                            ModBlocks.SOLID_HELIUM
+                    )
+            );
+
+    public static final RegistryObject<Block> SOLID_HELIUM =
+            BLOCKS.register("solid_helium",
+                    () -> new SolidSubstanceBlock(
+                            Block.Properties.of(Material.STONE)
+                                    .strength(0.5F)
+                                    .requiresCorrectToolForDrops(),
+                            SubstanceCatalog.HELIUM,
+                            ModBlocks.HELIUM
+                    )
+            );
 }

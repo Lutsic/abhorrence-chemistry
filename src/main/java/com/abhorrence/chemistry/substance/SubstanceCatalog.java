@@ -1,6 +1,7 @@
 
 package com.abhorrence.chemistry.substance;
 
+import com.abhorrence.chemistry.registry.ModGases;
 import net.minecraft.util.ResourceLocation;
 
 import java.util.HashMap;
@@ -20,6 +21,18 @@ public class SubstanceCatalog {
                     13.99,
                     20.271,
                     MekanismGases.HYDROGEN,
+                    new ThermalProperties(40, 40)
+            )
+    );
+
+    public static final Substance HELIUM = register(
+            new Substance(
+                    new ResourceLocation("chemistry", "helium"),
+                    "Helium",
+                    "He",
+                    0.95,
+                    4.22,
+                    ModGases.HELIUM,
                     new ThermalProperties(40, 40)
             )
     );

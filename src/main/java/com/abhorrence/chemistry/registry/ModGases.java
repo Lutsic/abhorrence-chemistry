@@ -12,8 +12,8 @@ public class ModGases {
     public static final DeferredRegister<Gas> GASES =
             DeferredRegister.create(Gas.class, ChemistryMod.MOD_ID);
 
-    public static final RegistryObject<Gas> HYDROGEN =
-            GASES.register("hydrogen", () ->
+    public static final RegistryObject<Gas> HELIUM =
+            GASES.register("helium", () ->
                     new Gas(GasBuilder.builder().color(0xFFFFFF))
             );
 
