@@ -1,0 +1,7 @@
+{
+  "type":"mekanism:rotary",
+  "fluidInput": {"amount":1,"fluid":"chemistry:hydrogen"},
+  "gasOutput":{"gas":"mekanism:hydrogen","amount":1},
+  "gasInput":{"amount":1,"gas":"mekanism:hydrogen"},
+  "fluidOutput":{"fluid":"chemistry:hydrogen","amount":1}
+}

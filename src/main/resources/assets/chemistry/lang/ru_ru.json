@@ -20,5 +20,12 @@
   "item.chemistry.solid_beryllium_nugget": "Самородок бериллия",
   "block.chemistry.beryllium": "Жидкий бериллий",
   "fluid.chemistry.beryllium": "Жидкий бериллий",
-  "gas.chemistry.beryllium": "Бериллий"
+  "gas.chemistry.beryllium": "Бериллий",
+
+  "item.chemistry.lithium_bucket": "Ведро лития",
+  "block.chemistry.solid_lithium": "Блок лития",
+  "item.chemistry.solid_lithium_item": "Слиток лития",
+  "item.chemistry.solid_lithium_nugget": "Самородок лития",
+  "block.chemistry.lithium": "Жидкий литий",
+  "fluid.chemistry.lithium": "Жидкий литий"
 }

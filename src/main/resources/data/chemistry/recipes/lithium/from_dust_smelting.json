@@ -1,0 +1,7 @@
+{
+  "type":"minecraft:smelting",
+  "result":"chemistry:solid_lithium_item",
+  "ingredient":{"item":"mekanism:dust_lithium"},
+  "cookingtime":200,
+  "experience":0.35
+}

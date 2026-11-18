@@ -122,7 +122,7 @@ public class ModFluids {
                         .density(71)
                         .temperature(14)
                         .viscosity(100)
-                        .color(0xDEC369FF)
+                        .color(0xFFB08843)
         )
                 .block(ModBlocks.LITHIUM)
                 .bucket(ModItems.LITHIUM_BUCKET);

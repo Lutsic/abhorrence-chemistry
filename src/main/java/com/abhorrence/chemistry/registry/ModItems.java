@@ -99,6 +99,14 @@ public class ModItems {
                     )
             );
 
+    public static final RegistryObject<Item> SOLID_LITHIUM_NUGGET =
+            ITEMS.register("solid_lithium_nugget",
+                    () -> new Item(
+                            new Item.Properties()
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
+
     public static final RegistryObject<Item> BERYLLIUM_BUCKET =
             ITEMS.register("beryllium_bucket",
                     () -> new BucketItem(

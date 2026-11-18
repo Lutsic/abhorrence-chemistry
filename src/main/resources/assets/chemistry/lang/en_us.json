@@ -20,5 +20,12 @@
   "item.chemistry.solid_beryllium_nugget": "Beryllium Nugget",
   "block.chemistry.beryllium": "Liquid Beryllium",
   "fluid.chemistry.beryllium": "Liquid Beryllium",
-  "gas.chemistry.beryllium": "Beryllium"
+  "gas.chemistry.beryllium": "Beryllium",
+
+  "item.chemistry.lithium_bucket": "Lithium Bucket",
+  "block.chemistry.solid_lithium": "Block of Lithium",
+  "item.chemistry.solid_lithium_item": "Lithium Ingot",
+  "item.chemistry.solid_lithium_nugget": "Lithium Nugget",
+  "block.chemistry.lithium": "Liquid Lithium",
+  "fluid.chemistry.lithium": "Liquid Lithium"
 }

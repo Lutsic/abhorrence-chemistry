@@ -1,0 +1,7 @@
+{
+  "type":"mekanism:rotary",
+  "fluidInput": {"amount":1,"fluid":"chemistry:helium"},
+  "gasOutput":{"gas":"chemistry:helium","amount":1},
+  "gasInput":{"amount":1,"gas":"chemistry:helium"},
+  "fluidOutput":{"fluid":"chemistry:helium","amount":1}
+}

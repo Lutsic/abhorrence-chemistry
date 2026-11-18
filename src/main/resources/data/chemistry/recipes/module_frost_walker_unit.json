@@ -1,0 +1,11 @@
+{
+  "type":"minecraft:crafting_shaped",
+  "result":{"item":"mekanism:module_frost_walker_unit"},
+  "pattern":["A#A","APA","H#H"],
+  "key":{
+    "A":{"item":"mekanism:alloy_reinforced"},
+    "P":{"item":"mekanism:module_base"},
+    "#":{"item":"chemistry:hydrogen_bucket"},
+    "H":{"item":"mekanism:pellet_polonium"}
+  }
+}

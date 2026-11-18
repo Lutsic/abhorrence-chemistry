@@ -1,5 +1,6 @@
 package com.abhorrence.chemistry;
 
+import com.abhorrence.chemistry.recipe.RecipeManagerHandler;
 import com.abhorrence.chemistry.registry.ModBlocks;
 import com.abhorrence.chemistry.registry.ModFluids;
 import com.abhorrence.chemistry.registry.ModGases;
@@ -33,6 +34,14 @@ public class ChemistryMod
     private static final Logger LOGGER = LogManager.getLogger();
 
     public ChemistryMod() {
+        MinecraftForge.EVENT_BUS.addListener(
+                RecipeManagerHandler::onAddReloadListener
+        );
+
+        MinecraftForge.EVENT_BUS.addListener(
+                RecipeManagerHandler::onServerStarted
+        );
+
         // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         // Register the enqueueIMC method for modloading

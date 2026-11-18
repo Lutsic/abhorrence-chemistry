@@ -1,0 +1,8 @@
+{
+  "type":"mekanism:crystallizing",
+  "chemicalType":"gas",
+  "input":{
+    "amount":111,
+    "gas":"chemistry:helium"
+  },
+  "output":{"item":"chemistry:solid_helium_item"}}
