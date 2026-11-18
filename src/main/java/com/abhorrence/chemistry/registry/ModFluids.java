@@ -90,4 +90,78 @@ public class ModFluids {
                 .block(ModBlocks.HELIUM)
                 .bucket(ModItems.HELIUM_BUCKET);
     }
+
+    public static final ResourceLocation LITHIUM_STILL_TEXTURE =
+            new ResourceLocation(ChemistryMod.MOD_ID, "fluid/liquid");
+
+    public static final ResourceLocation LITHIUM_FLOWING_TEXTURE =
+            new ResourceLocation(ChemistryMod.MOD_ID, "fluid/liquid_flow");
+
+    public static final RegistryObject<FlowingFluid> LITHIUM =
+            FLUIDS.register("lithium",
+                    () -> new ForgeFlowingFluid.Source(
+                            lithiumProperties()
+                    )
+            );
+
+    public static final RegistryObject<FlowingFluid> FLOWING_LITHIUM =
+            FLUIDS.register("flowing_lithium",
+                    () -> new ForgeFlowingFluid.Flowing(
+                            lithiumProperties()
+                    )
+            );
+
+    private static ForgeFlowingFluid.Properties lithiumProperties() {
+        return new ForgeFlowingFluid.Properties(
+                LITHIUM,
+                FLOWING_LITHIUM,
+                FluidAttributes.builder(
+                                LITHIUM_STILL_TEXTURE,
+                                LITHIUM_FLOWING_TEXTURE
+                        )
+                        .density(71)
+                        .temperature(14)
+                        .viscosity(100)
+                        .color(0xDEC369FF)
+        )
+                .block(ModBlocks.LITHIUM)
+                .bucket(ModItems.LITHIUM_BUCKET);
+    }
+
+    public static final ResourceLocation BERYLLIUM_STILL_TEXTURE =
+            new ResourceLocation(ChemistryMod.MOD_ID, "fluid/liquid");
+
+    public static final ResourceLocation BERYLLIUM_FLOWING_TEXTURE =
+            new ResourceLocation(ChemistryMod.MOD_ID, "fluid/liquid_flow");
+
+    public static final RegistryObject<FlowingFluid> BERYLLIUM =
+            FLUIDS.register("beryllium",
+                    () -> new ForgeFlowingFluid.Source(
+                            berylliumProperties()
+                    )
+            );
+
+    public static final RegistryObject<FlowingFluid> FLOWING_BERYLLIUM =
+            FLUIDS.register("flowing_beryllium",
+                    () -> new ForgeFlowingFluid.Flowing(
+                            berylliumProperties()
+                    )
+            );
+
+    private static ForgeFlowingFluid.Properties berylliumProperties() {
+        return new ForgeFlowingFluid.Properties(
+                BERYLLIUM,
+                FLOWING_BERYLLIUM,
+                FluidAttributes.builder(
+                                BERYLLIUM_STILL_TEXTURE,
+                                BERYLLIUM_FLOWING_TEXTURE
+                        )
+                        .density(71)
+                        .temperature(14)
+                        .viscosity(100)
+                        .color(0xBDBDBDFF)
+        )
+                .block(ModBlocks.BERYLLIUM)
+                .bucket(ModItems.BERYLLIUM_BUCKET);
+    }
 }

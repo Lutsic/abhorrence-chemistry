@@ -37,6 +37,30 @@ public class SubstanceCatalog {
             )
     );
 
+    public static final Substance LITHIUM = register(
+            new Substance(
+                    new ResourceLocation("chemistry", "lithium"),
+                    "Lithium",
+                    "Li",
+                    453.65,
+                    1615,
+                    MekanismGases.LITHIUM,
+                    new ThermalProperties(40, 40)
+            )
+    );
+
+    public static final Substance BERYLLIUM = register(
+            new Substance(
+                    new ResourceLocation("chemistry", "beryllium"),
+                    "Beryllium",
+                    "Be",
+                    1560,
+                    2742,
+                    ModGases.BERYLLIUM,
+                    new ThermalProperties(40, 40)
+            )
+    );
+
     public static final Substance OXYGEN = register(
             new Substance(
                     new ResourceLocation("chemistry", "oxygen"),

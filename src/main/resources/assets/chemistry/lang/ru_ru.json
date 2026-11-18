@@ -12,5 +12,13 @@
   "item.chemistry.solid_helium_item": "Кучка кристаллов гелия",
   "block.chemistry.helium": "Жидкий гелий",
   "fluid.chemistry.helium": "Жидкий гелий",
-  "gas.chemistry.helium": "Гелий"
+  "gas.chemistry.helium": "Гелий",
+
+  "item.chemistry.beryllium_bucket": "Ведро бериллия",
+  "block.chemistry.solid_beryllium": "Блок бериллия",
+  "item.chemistry.solid_beryllium_item": "Слиток бериллия",
+  "item.chemistry.solid_beryllium_nugget": "Самородок бериллия",
+  "block.chemistry.beryllium": "Жидкий бериллий",
+  "fluid.chemistry.beryllium": "Жидкий бериллий",
+  "gas.chemistry.beryllium": "Бериллий"
 }

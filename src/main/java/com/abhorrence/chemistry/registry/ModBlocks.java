@@ -67,4 +67,52 @@ public class ModBlocks {
                             ModBlocks.HELIUM
                     )
             );
+
+    public static final RegistryObject<FlowingFluidBlock> LITHIUM =
+            BLOCKS.register("lithium",
+                    () -> new EvaporatingFluidBlock(
+                            ModFluids.LITHIUM,
+                            Block.Properties.of(Material.WATER)
+                                    .noCollission()
+                                    .strength(100.0F)
+                                    .noDrops(),
+                            SubstanceCatalog.LITHIUM,
+                            ModBlocks.SOLID_LITHIUM
+                    )
+            );
+
+    public static final RegistryObject<Block> SOLID_LITHIUM =
+            BLOCKS.register("solid_lithium",
+                    () -> new SolidSubstanceBlock(
+                            Block.Properties.of(Material.STONE)
+                                    .strength(0.5F)
+                                    .requiresCorrectToolForDrops(),
+                            SubstanceCatalog.LITHIUM,
+                            ModBlocks.LITHIUM
+                    )
+            );
+
+    public static final RegistryObject<FlowingFluidBlock> BERYLLIUM =
+            BLOCKS.register("beryllium",
+                    () -> new EvaporatingFluidBlock(
+                            ModFluids.BERYLLIUM,
+                            Block.Properties.of(Material.WATER)
+                                    .noCollission()
+                                    .strength(100.0F)
+                                    .noDrops(),
+                            SubstanceCatalog.BERYLLIUM,
+                            ModBlocks.SOLID_BERYLLIUM
+                    )
+            );
+
+    public static final RegistryObject<Block> SOLID_BERYLLIUM =
+            BLOCKS.register("solid_beryllium",
+                    () -> new SolidSubstanceBlock(
+                            Block.Properties.of(Material.STONE)
+                                    .strength(0.5F)
+                                    .requiresCorrectToolForDrops(),
+                            SubstanceCatalog.BERYLLIUM,
+                            ModBlocks.BERYLLIUM
+                    )
+            );
 }

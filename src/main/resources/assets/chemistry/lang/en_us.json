@@ -12,5 +12,13 @@
   "item.chemistry.solid_helium_item": "Pile of Helium Crystals",
   "block.chemistry.helium": "Liquid Helium",
   "fluid.chemistry.helium": "Liquid Helium",
-  "gas.chemistry.helium": "Helium"
+  "gas.chemistry.helium": "Helium",
+
+  "item.chemistry.beryllium_bucket": "Beryllium Bucket",
+  "block.chemistry.solid_beryllium": "Block of Beryllium",
+  "item.chemistry.solid_beryllium_item": "Beryllium Ingot",
+  "item.chemistry.solid_beryllium_nugget": "Beryllium Nugget",
+  "block.chemistry.beryllium": "Liquid Beryllium",
+  "fluid.chemistry.beryllium": "Liquid Beryllium",
+  "gas.chemistry.beryllium": "Beryllium"
 }

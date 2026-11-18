@@ -17,6 +17,11 @@ public class ModGases {
                     new Gas(GasBuilder.builder().color(0xFFFFFF))
             );
 
+    public static final RegistryObject<Gas> BERYLLIUM =
+            GASES.register("beryllium", () ->
+                    new Gas(GasBuilder.builder().color(0xFFFFFF))
+            );
+
     public static final RegistryObject<Gas> OXYGEN =
             GASES.register("oxygen", () ->
                     new Gas(GasBuilder.builder().color(0x80BFFF))

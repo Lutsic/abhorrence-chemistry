@@ -2,6 +2,9 @@ repositories {
     maven {
         url = 'https://modmaven.dev/'
     }
+    maven {
+        url "https://maven.blamejared.com"
+    }
 }
 
 buildscript {
@@ -128,6 +131,9 @@ dependencies {
     // Mekanism API
     compileOnly fg.deobf("mekanism:Mekanism:${mekanism_version}")
     runtimeOnly fg.deobf("mekanism:Mekanism:${mekanism_version}")
+
+    compileOnly fg.deobf("mezz.jei:jei-1.16.5:7.7.1.152")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.16.5:7.7.1.152")
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"

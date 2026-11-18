@@ -70,4 +70,68 @@ public class ModItems {
                                     .tab(ModItemGroups.CHEMISTRY)
                     )
             );
+
+    public static final RegistryObject<Item> LITHIUM_BUCKET =
+            ITEMS.register("lithium_bucket",
+                    () -> new BucketItem(
+                            ModFluids.LITHIUM,
+                            new Item.Properties()
+                                    .craftRemainder(Items.BUCKET)
+                                    .stacksTo(1)
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
+
+    public static final RegistryObject<Item> SOLID_LITHIUM =
+            ITEMS.register("solid_lithium",
+                    () -> new BlockItem(
+                            ModBlocks.SOLID_LITHIUM.get(),
+                            new Item.Properties()
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
+
+    public static final RegistryObject<Item> SOLID_LITHIUM_ITEM =
+            ITEMS.register("solid_lithium_item",
+                    () -> new Item(
+                            new Item.Properties()
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
+
+    public static final RegistryObject<Item> BERYLLIUM_BUCKET =
+            ITEMS.register("beryllium_bucket",
+                    () -> new BucketItem(
+                            ModFluids.BERYLLIUM,
+                            new Item.Properties()
+                                    .craftRemainder(Items.BUCKET)
+                                    .stacksTo(1)
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
+
+    public static final RegistryObject<Item> SOLID_BERYLLIUM =
+            ITEMS.register("solid_beryllium",
+                    () -> new BlockItem(
+                            ModBlocks.SOLID_BERYLLIUM.get(),
+                            new Item.Properties()
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
+
+    public static final RegistryObject<Item> SOLID_BERYLLIUM_ITEM =
+            ITEMS.register("solid_beryllium_item",
+                    () -> new Item(
+                            new Item.Properties()
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
+
+    public static final RegistryObject<Item> SOLID_BERYLLIUM_NUGGET =
+            ITEMS.register("solid_beryllium_nugget",
+                    () -> new Item(
+                            new Item.Properties()
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
 }
