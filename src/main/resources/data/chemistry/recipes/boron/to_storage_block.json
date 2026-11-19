@@ -1,0 +1,8 @@
+{
+  "type":"minecraft:crafting_shaped",
+  "result":{"item":"chemistry:solid_boron"},
+  "pattern":["###","###","###"],
+  "key":{
+    "#":{"item":"chemistry:solid_boron_item"}
+  }
+}

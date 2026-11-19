@@ -1,0 +1,7 @@
+{
+  "type":"mekanism:rotary",
+  "fluidInput": {"amount":1,"fluid":"chemistry:boron"},
+  "gasOutput":{"gas":"chemistry:boron","amount":1},
+  "gasInput":{"amount":1,"gas":"chemistry:boron"},
+  "fluidOutput":{"fluid":"chemistry:boron","amount":1}
+}

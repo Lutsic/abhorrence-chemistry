@@ -1,0 +1,8 @@
+{
+  "type":"mekanism:crystallizing",
+  "chemicalType":"gas",
+  "input":{
+    "amount":111,
+    "gas":"chemistry:boron"
+  },
+  "output":{"item":"chemistry:solid_boron_item"}}

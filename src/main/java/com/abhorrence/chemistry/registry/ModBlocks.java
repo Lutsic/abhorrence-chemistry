@@ -115,4 +115,28 @@ public class ModBlocks {
                             ModBlocks.BERYLLIUM
                     )
             );
+
+    public static final RegistryObject<FlowingFluidBlock> BORON =
+            BLOCKS.register("boron",
+                    () -> new EvaporatingFluidBlock(
+                            ModFluids.BORON,
+                            Block.Properties.of(Material.WATER)
+                                    .noCollission()
+                                    .strength(100.0F)
+                                    .noDrops(),
+                            SubstanceCatalog.BORON,
+                            ModBlocks.SOLID_BORON
+                    )
+            );
+
+    public static final RegistryObject<Block> SOLID_BORON =
+            BLOCKS.register("solid_boron",
+                    () -> new SolidSubstanceBlock(
+                            Block.Properties.of(Material.STONE)
+                                    .strength(0.5F)
+                                    .requiresCorrectToolForDrops(),
+                            SubstanceCatalog.BORON,
+                            ModBlocks.BORON
+                    )
+            );
 }

@@ -1,0 +1,5 @@
+{
+  "type":"minecraft:crafting_shapeless",
+  "result":{"item":"chemistry:solid_boron_item","count":9},
+  "ingredients":[{"item":"chemistry:solid_boron"}]
+}

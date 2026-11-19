@@ -61,6 +61,18 @@ public class SubstanceCatalog {
             )
     );
 
+    public static final Substance BORON = register(
+            new Substance(
+                    new ResourceLocation("chemistry", "boron"),
+                    "Boron",
+                    "B",
+                    2349,
+                    4200,
+                    ModGases.BORON,
+                    new ThermalProperties(40, 40)
+            )
+    );
+
     public static final Substance OXYGEN = register(
             new Substance(
                     new ResourceLocation("chemistry", "oxygen"),

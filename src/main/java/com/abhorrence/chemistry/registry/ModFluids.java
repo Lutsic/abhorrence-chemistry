@@ -164,4 +164,41 @@ public class ModFluids {
                 .block(ModBlocks.BERYLLIUM)
                 .bucket(ModItems.BERYLLIUM_BUCKET);
     }
+
+    public static final ResourceLocation BORON_STILL_TEXTURE =
+            new ResourceLocation(ChemistryMod.MOD_ID, "fluid/liquid");
+
+    public static final ResourceLocation BORON_FLOWING_TEXTURE =
+            new ResourceLocation(ChemistryMod.MOD_ID, "fluid/liquid_flow");
+
+    public static final RegistryObject<FlowingFluid> BORON =
+            FLUIDS.register("boron",
+                    () -> new ForgeFlowingFluid.Source(
+                            boronProperties()
+                    )
+            );
+
+    public static final RegistryObject<FlowingFluid> FLOWING_BORON =
+            FLUIDS.register("flowing_boron",
+                    () -> new ForgeFlowingFluid.Flowing(
+                            boronProperties()
+                    )
+            );
+
+    private static ForgeFlowingFluid.Properties boronProperties() {
+        return new ForgeFlowingFluid.Properties(
+                BORON,
+                FLOWING_BORON,
+                FluidAttributes.builder(
+                                BORON_STILL_TEXTURE,
+                                BORON_FLOWING_TEXTURE
+                        )
+                        .density(71)
+                        .temperature(14)
+                        .viscosity(100)
+                        .color(0xFFfff8d9)
+        )
+                .block(ModBlocks.BORON)
+                .bucket(ModItems.BORON_BUCKET);
+    }
 }

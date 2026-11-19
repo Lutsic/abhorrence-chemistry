@@ -45,7 +45,11 @@ public class ModItemGroups {
                             ModItems.SOLID_BERYLLIUM.get(),
                             ModItems.SOLID_BERYLLIUM_ITEM.get(),
                             ModItems.SOLID_BERYLLIUM_NUGGET.get(),
-                            ModItems.SOLID_BERYLLIUM_DUST.get()
+                            ModItems.SOLID_BERYLLIUM_DUST.get(),
+
+                            ModItems.BORON_BUCKET.get(),
+                            ModItems.SOLID_BORON.get(),
+                            ModItems.SOLID_BORON_ITEM.get()
                     );
 
                     items.sort(Comparator.comparingInt(stack -> {

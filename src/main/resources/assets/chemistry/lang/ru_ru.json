@@ -28,5 +28,12 @@
   "item.chemistry.solid_lithium_item": "Слиток лития",
   "item.chemistry.solid_lithium_nugget": "Самородок лития",
   "block.chemistry.lithium": "Жидкий литий",
-  "fluid.chemistry.lithium": "Жидкий литий"
+  "fluid.chemistry.lithium": "Жидкий литий",
+
+  "item.chemistry.boron_bucket": "Ведро бора",
+  "block.chemistry.solid_boron": "Блок бора",
+  "item.chemistry.solid_boron_item": "Порошок бора",
+  "block.chemistry.lithium": "Жидкий бор",
+  "fluid.chemistry.lithium": "Жидкий бор",
+  "gas.chemistry.boron": "Бор"
 }

@@ -150,4 +150,32 @@ public class ModItems {
                                     .tab(ModItemGroups.CHEMISTRY)
                     )
             );
+
+    public static final RegistryObject<Item> BORON_BUCKET =
+            ITEMS.register("boron_bucket",
+                    () -> new BucketItem(
+                            ModFluids.BORON,
+                            new Item.Properties()
+                                    .craftRemainder(Items.BUCKET)
+                                    .stacksTo(1)
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
+
+    public static final RegistryObject<Item> SOLID_BORON =
+            ITEMS.register("solid_boron",
+                    () -> new BlockItem(
+                            ModBlocks.SOLID_BORON.get(),
+                            new Item.Properties()
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
+
+    public static final RegistryObject<Item> SOLID_BORON_ITEM =
+            ITEMS.register("solid_boron_item",
+                    () -> new Item(
+                            new Item.Properties()
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
 }

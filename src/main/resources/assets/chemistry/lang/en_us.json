@@ -28,5 +28,12 @@
   "item.chemistry.solid_lithium_item": "Lithium Ingot",
   "item.chemistry.solid_lithium_nugget": "Lithium Nugget",
   "block.chemistry.lithium": "Liquid Lithium",
-  "fluid.chemistry.lithium": "Liquid Lithium"
+  "fluid.chemistry.lithium": "Liquid Lithium",
+
+  "item.chemistry.boron_bucket": "Boron Bucket",
+  "block.chemistry.solid_boron": "Block of Boron",
+  "item.chemistry.solid_boron_item": "Boron Powder",
+  "block.chemistry.lithium": "Liquid Boron",
+  "fluid.chemistry.lithium": "Liquid Boron",
+  "gas.chemistry.boron": "Boron"
 }
