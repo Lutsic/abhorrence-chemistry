@@ -1,0 +1,7 @@
+{
+  "type":"minecraft:smelting",
+  "result":"chemistry:solid_beryllium_item",
+  "ingredient":{"item":"chemistry:solid_beryllium_dust"},
+  "cookingtime":200,
+  "experience":0.35
+}

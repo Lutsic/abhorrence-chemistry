@@ -1,0 +1,7 @@
+{
+  "type":"minecraft:blasting",
+  "result":"chemistry:solid_beryllium_item",
+  "ingredient":{"item":"chemistry:solid_beryllium_dust"},
+  "cookingtime":100,
+  "experience":0.35
+}

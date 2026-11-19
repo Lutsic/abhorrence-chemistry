@@ -142,4 +142,12 @@ public class ModItems {
                                     .tab(ModItemGroups.CHEMISTRY)
                     )
             );
+
+    public static final RegistryObject<Item> SOLID_BERYLLIUM_DUST =
+            ITEMS.register("solid_beryllium_dust",
+                    () -> new Item(
+                            new Item.Properties()
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
 }

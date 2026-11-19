@@ -1,0 +1,8 @@
+{
+  "type":"minecraft:crafting_shaped",
+  "result":{"item":"chemistry:solid_beryllium_item"},
+  "pattern":["###","###","###"],
+  "key":{
+    "#":{"item":"chemistry:solid_beryllium_nugget"}
+  }
+}

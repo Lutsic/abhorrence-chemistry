@@ -18,6 +18,7 @@
   "block.chemistry.solid_beryllium": "Block of Beryllium",
   "item.chemistry.solid_beryllium_item": "Beryllium Ingot",
   "item.chemistry.solid_beryllium_nugget": "Beryllium Nugget",
+  "item.chemistry.solid_beryllium_dust": "Beryllium Dust",
   "block.chemistry.beryllium": "Liquid Beryllium",
   "fluid.chemistry.beryllium": "Liquid Beryllium",
   "gas.chemistry.beryllium": "Beryllium",
