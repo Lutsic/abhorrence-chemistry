@@ -3,6 +3,9 @@ repositories {
         url = 'https://modmaven.dev/'
     }
     maven {
+        url "https://www.cursemaven.com"
+    }
+    maven {
         url "https://maven.blamejared.com"
     }
 }
@@ -134,6 +137,10 @@ dependencies {
 
     compileOnly fg.deobf("mezz.jei:jei-1.16.5:7.7.1.152")
     runtimeOnly fg.deobf("mezz.jei:jei-1.16.5:7.7.1.152")
+
+    implementation fg.deobf("curse.maven:immersive-engineering-231951:3809596")
+    implementation fg.deobf("curse.maven:pneumaticcraft-repressurized-281849:4060049")
+    implementation fg.deobf("curse.maven:patchouli-306770:3847029")
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
