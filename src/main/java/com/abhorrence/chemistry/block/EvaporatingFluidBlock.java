@@ -14,6 +14,8 @@ import net.minecraft.world.server.ServerWorld;
 import java.util.Random;
 import java.util.function.Supplier;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class EvaporatingFluidBlock extends FlowingFluidBlock {
 
     private final Substance substance;
@@ -32,14 +34,14 @@ public class EvaporatingFluidBlock extends FlowingFluidBlock {
     }
 
     @Override
-    public void onPlace(
+    public void onBlockAdded(
             BlockState state,
             World world,
             BlockPos pos,
             BlockState oldState,
             boolean isMoving
     ) {
-        super.onPlace(state, world, pos, oldState, isMoving);
+        super.onBlockAdded(state, world, pos, oldState, isMoving);
 
         if (oldState.getBlock() != this) {
             PhaseTransitionHandler.scheduleFluidTransition(

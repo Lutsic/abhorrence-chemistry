@@ -43,7 +43,7 @@ minecraft {
     //
     // Use non-default mappings at your own risk. they may not always work.
     // Simply re-run your setup task after changing the mappings to update your workspace.
-    mappings channel: 'official', version: '1.16.5'
+    mappings channel: 'snapshot', version: '20210309-1.16.5'
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
@@ -71,6 +71,10 @@ minecraft {
                     source sourceSets.main
                 }
             }
+
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile',
+                    "${projectDir}/build/createSrgToMcp/output.srg"
         }
 
         server {
@@ -193,5 +197,13 @@ publishing {
         maven {
             url "file:///${project.projectDir}/mcmodsrepo"
         }
+    }
+}
+
+tasks.withType(JavaExec).configureEach {
+    if (name == 'extractRangeMap' || name == 'applyRangeMap') {
+        javaLauncher.set(javaToolchains.launcherFor {
+            languageVersion = JavaLanguageVersion.of(17)
+        })
     }
 }

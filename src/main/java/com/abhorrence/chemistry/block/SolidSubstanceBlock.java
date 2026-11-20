@@ -14,6 +14,8 @@ import net.minecraft.world.server.ServerWorld;
 import java.util.Random;
 import java.util.function.Supplier;
 
+import net.minecraft.block.AbstractBlock.Properties;
+
 public class SolidSubstanceBlock extends Block {
 
     private final Substance substance;
@@ -31,14 +33,14 @@ public class SolidSubstanceBlock extends Block {
     }
 
     @Override
-    public void onPlace(
+    public void onBlockAdded(
             BlockState state,
             World world,
             BlockPos pos,
             BlockState oldState,
             boolean isMoving
     ) {
-        super.onPlace(state, world, pos, oldState, isMoving);
+        super.onBlockAdded(state, world, pos, oldState, isMoving);
 
         if (oldState.getBlock() != this) {
             scheduleMelting(world, pos);
@@ -62,7 +64,7 @@ public class SolidSubstanceBlock extends Block {
         int delay = substance.getThermalProperties().getMeltingTimeTicks();
 
         ServerWorld serverWorld = (ServerWorld) world;
-        serverWorld.getBlockTicks().scheduleTick(pos, this, delay);
+        serverWorld.getPendingBlockTicks().scheduleTick(pos, this, delay);
     }
 
     @Override
@@ -82,9 +84,9 @@ public class SolidSubstanceBlock extends Block {
                 Thermodynamics.getState(substance, temperature);
 
         if (physicalState != PhysicalState.SOLID) {
-            world.setBlock(
+            world.setBlockState(
                     pos,
-                    liquidBlock.get().defaultBlockState(),
+                    liquidBlock.get().getDefaultState(),
                     3
             );
         }

@@ -50,6 +50,6 @@ public class RecipeEditor {
     }
 
     void apply() {
-        manager.replaceRecipes(recipes);
+        manager.deserializeRecipes(recipes);
     }
 }

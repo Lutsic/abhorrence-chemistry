@@ -52,7 +52,7 @@ public final class PhaseTransitionHandler {
 
         ServerWorld serverWorld = (ServerWorld) world;
 
-        serverWorld.getBlockTicks().scheduleTick(
+        serverWorld.getPendingBlockTicks().scheduleTick(
                 pos,
                 block,
                 delay
@@ -74,9 +74,9 @@ public final class PhaseTransitionHandler {
                 WorldEnvironment.getTemperature(world, pos);
 
         if (Thermodynamics.shouldEvaporate(substance, temperature)) {
-            boolean removed = world.setBlock(
+            boolean removed = world.setBlockState(
                     pos,
-                    net.minecraft.block.Blocks.AIR.defaultBlockState(),
+                    net.minecraft.block.Blocks.AIR.getDefaultState(),
                     3
             );
         }
@@ -113,7 +113,7 @@ public final class PhaseTransitionHandler {
         }
 
         ServerWorld serverWorld = (ServerWorld) world;
-        serverWorld.getBlockTicks().scheduleTick(pos, block, delay);
+        serverWorld.getPendingBlockTicks().scheduleTick(pos, block, delay);
     }
 
     public static void handleFluidTransition(
@@ -135,9 +135,9 @@ public final class PhaseTransitionHandler {
         );
 
         if (state == PhysicalState.GAS) {
-            world.setBlock(
+            world.setBlockState(
                     pos,
-                    Blocks.AIR.defaultBlockState(),
+                    Blocks.AIR.getDefaultState(),
                     3
             );
         } else if (state == PhysicalState.SOLID) {
@@ -148,15 +148,15 @@ public final class PhaseTransitionHandler {
             }
 
             int level = world.getBlockState(pos)
-                    .getValue(FlowingFluidBlock.LEVEL);
+                    .get(FlowingFluidBlock.LEVEL);
 
             if (level != 0) {
                 return;
             }
 
-            world.setBlock(
+            world.setBlockState(
                     pos,
-                    solidBlock.get().defaultBlockState(),
+                    solidBlock.get().getDefaultState(),
                     3
             );
         }

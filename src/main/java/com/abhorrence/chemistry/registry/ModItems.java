@@ -20,9 +20,9 @@ public class ModItems {
                     () -> new BucketItem(
                             ModFluids.HYDROGEN,
                             new Item.Properties()
-                                    .craftRemainder(Items.BUCKET)
-                                    .stacksTo(1)
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .containerItem(Items.BUCKET)
+                                    .maxStackSize(1)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -31,7 +31,7 @@ public class ModItems {
                     () -> new BlockItem(
                             ModBlocks.SOLID_HYDROGEN.get(),
                             new Item.Properties()
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -39,7 +39,7 @@ public class ModItems {
             ITEMS.register("solid_hydrogen_item",
                     () -> new Item(
                             new Item.Properties()
-                            .tab(ModItemGroups.CHEMISTRY)
+                            .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -48,9 +48,9 @@ public class ModItems {
                     () -> new BucketItem(
                             ModFluids.HELIUM,
                             new Item.Properties()
-                                    .craftRemainder(Items.BUCKET)
-                                    .stacksTo(1)
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .containerItem(Items.BUCKET)
+                                    .maxStackSize(1)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -59,7 +59,7 @@ public class ModItems {
                     () -> new BlockItem(
                             ModBlocks.SOLID_HELIUM.get(),
                             new Item.Properties()
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -67,7 +67,7 @@ public class ModItems {
             ITEMS.register("solid_helium_item",
                     () -> new Item(
                             new Item.Properties()
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -76,9 +76,9 @@ public class ModItems {
                     () -> new BucketItem(
                             ModFluids.LITHIUM,
                             new Item.Properties()
-                                    .craftRemainder(Items.BUCKET)
-                                    .stacksTo(1)
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .containerItem(Items.BUCKET)
+                                    .maxStackSize(1)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -87,7 +87,7 @@ public class ModItems {
                     () -> new BlockItem(
                             ModBlocks.SOLID_LITHIUM.get(),
                             new Item.Properties()
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -95,7 +95,7 @@ public class ModItems {
             ITEMS.register("solid_lithium_item",
                     () -> new Item(
                             new Item.Properties()
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -103,7 +103,7 @@ public class ModItems {
             ITEMS.register("solid_lithium_nugget",
                     () -> new Item(
                             new Item.Properties()
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -112,9 +112,9 @@ public class ModItems {
                     () -> new BucketItem(
                             ModFluids.BERYLLIUM,
                             new Item.Properties()
-                                    .craftRemainder(Items.BUCKET)
-                                    .stacksTo(1)
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .containerItem(Items.BUCKET)
+                                    .maxStackSize(1)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -123,7 +123,7 @@ public class ModItems {
                     () -> new BlockItem(
                             ModBlocks.SOLID_BERYLLIUM.get(),
                             new Item.Properties()
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -131,7 +131,7 @@ public class ModItems {
             ITEMS.register("solid_beryllium_item",
                     () -> new Item(
                             new Item.Properties()
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -139,7 +139,7 @@ public class ModItems {
             ITEMS.register("solid_beryllium_nugget",
                     () -> new Item(
                             new Item.Properties()
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -147,7 +147,7 @@ public class ModItems {
             ITEMS.register("solid_beryllium_dust",
                     () -> new Item(
                             new Item.Properties()
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -156,9 +156,9 @@ public class ModItems {
                     () -> new BucketItem(
                             ModFluids.BORON,
                             new Item.Properties()
-                                    .craftRemainder(Items.BUCKET)
-                                    .stacksTo(1)
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .containerItem(Items.BUCKET)
+                                    .maxStackSize(1)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -167,7 +167,7 @@ public class ModItems {
                     () -> new BlockItem(
                             ModBlocks.SOLID_BORON.get(),
                             new Item.Properties()
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -175,7 +175,7 @@ public class ModItems {
             ITEMS.register("solid_boron_item",
                     () -> new Item(
                             new Item.Properties()
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 
@@ -184,9 +184,9 @@ public class ModItems {
                     () -> new BucketItem(
                             ModFluids.CARBON,
                             new Item.Properties()
-                                    .craftRemainder(Items.BUCKET)
-                                    .stacksTo(1)
-                                    .tab(ModItemGroups.CHEMISTRY)
+                                    .containerItem(Items.BUCKET)
+                                    .maxStackSize(1)
+                                    .group(ModItemGroups.CHEMISTRY)
                     )
             );
 }

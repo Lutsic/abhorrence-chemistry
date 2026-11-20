@@ -19,13 +19,13 @@ public class ModItemGroups {
             new ItemGroup("chemistry") {
 
                 @Override
-                public ItemStack makeIcon() {
+                public ItemStack createIcon() {
                     return new ItemStack(ModItems.HYDROGEN_BUCKET.get());
                 }
 
                 @Override
-                public void fillItemList(NonNullList<ItemStack> items) {
-                    super.fillItemList(items);
+                public void fill(NonNullList<ItemStack> items) {
+                    super.fill(items);
 
                     List<Item> itemOrder = Arrays.asList(
                             ModItems.HYDROGEN_BUCKET.get(),

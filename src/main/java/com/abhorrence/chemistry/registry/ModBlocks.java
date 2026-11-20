@@ -25,9 +25,9 @@ public class ModBlocks {
             BLOCKS.register("hydrogen",
                     () -> new EvaporatingFluidBlock(
                             ModFluids.HYDROGEN,
-                            Block.Properties.of(Material.WATER)
-                                    .noCollission()
-                                    .strength(100.0F)
+                            Block.Properties.create(Material.WATER)
+                                    .doesNotBlockMovement()
+                                    .hardnessAndResistance(100.0F)
                                     .noDrops(),
                             SubstanceCatalog.HYDROGEN,
                             ModBlocks.SOLID_HYDROGEN
@@ -37,9 +37,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOLID_HYDROGEN =
             BLOCKS.register("solid_hydrogen",
                     () -> new SolidSubstanceBlock(
-                            Block.Properties.of(Material.STONE)
-                                    .strength(0.5F)
-                                    .requiresCorrectToolForDrops(),
+                            Block.Properties.create(Material.ROCK)
+                                    .hardnessAndResistance(0.5F)
+                                    .setRequiresTool(),
                             SubstanceCatalog.HYDROGEN,
                             ModBlocks.HYDROGEN
                     )
@@ -49,9 +49,9 @@ public class ModBlocks {
             BLOCKS.register("helium",
                     () -> new EvaporatingFluidBlock(
                             ModFluids.HELIUM,
-                            Block.Properties.of(Material.WATER)
-                                    .noCollission()
-                                    .strength(100.0F)
+                            Block.Properties.create(Material.WATER)
+                                    .doesNotBlockMovement()
+                                    .hardnessAndResistance(100.0F)
                                     .noDrops(),
                             SubstanceCatalog.HELIUM,
                             ModBlocks.SOLID_HELIUM
@@ -61,9 +61,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOLID_HELIUM =
             BLOCKS.register("solid_helium",
                     () -> new SolidSubstanceBlock(
-                            Block.Properties.of(Material.STONE)
-                                    .strength(0.5F)
-                                    .requiresCorrectToolForDrops(),
+                            Block.Properties.create(Material.ROCK)
+                                    .hardnessAndResistance(0.5F)
+                                    .setRequiresTool(),
                             SubstanceCatalog.HELIUM,
                             ModBlocks.HELIUM
                     )
@@ -73,9 +73,9 @@ public class ModBlocks {
             BLOCKS.register("lithium",
                     () -> new EvaporatingFluidBlock(
                             ModFluids.LITHIUM,
-                            Block.Properties.of(Material.WATER)
-                                    .noCollission()
-                                    .strength(100.0F)
+                            Block.Properties.create(Material.WATER)
+                                    .doesNotBlockMovement()
+                                    .hardnessAndResistance(100.0F)
                                     .noDrops(),
                             SubstanceCatalog.LITHIUM,
                             ModBlocks.SOLID_LITHIUM
@@ -85,9 +85,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOLID_LITHIUM =
             BLOCKS.register("solid_lithium",
                     () -> new SolidSubstanceBlock(
-                            Block.Properties.of(Material.STONE)
-                                    .strength(0.5F)
-                                    .requiresCorrectToolForDrops(),
+                            Block.Properties.create(Material.ROCK)
+                                    .hardnessAndResistance(0.5F)
+                                    .setRequiresTool(),
                             SubstanceCatalog.LITHIUM,
                             ModBlocks.LITHIUM
                     )
@@ -97,9 +97,9 @@ public class ModBlocks {
             BLOCKS.register("beryllium",
                     () -> new EvaporatingFluidBlock(
                             ModFluids.BERYLLIUM,
-                            Block.Properties.of(Material.WATER)
-                                    .noCollission()
-                                    .strength(100.0F)
+                            Block.Properties.create(Material.WATER)
+                                    .doesNotBlockMovement()
+                                    .hardnessAndResistance(100.0F)
                                     .noDrops(),
                             SubstanceCatalog.BERYLLIUM,
                             ModBlocks.SOLID_BERYLLIUM
@@ -109,9 +109,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOLID_BERYLLIUM =
             BLOCKS.register("solid_beryllium",
                     () -> new SolidSubstanceBlock(
-                            Block.Properties.of(Material.STONE)
-                                    .strength(0.5F)
-                                    .requiresCorrectToolForDrops(),
+                            Block.Properties.create(Material.ROCK)
+                                    .hardnessAndResistance(0.5F)
+                                    .setRequiresTool(),
                             SubstanceCatalog.BERYLLIUM,
                             ModBlocks.BERYLLIUM
                     )
@@ -121,9 +121,9 @@ public class ModBlocks {
             BLOCKS.register("boron",
                     () -> new EvaporatingFluidBlock(
                             ModFluids.BORON,
-                            Block.Properties.of(Material.WATER)
-                                    .noCollission()
-                                    .strength(100.0F)
+                            Block.Properties.create(Material.WATER)
+                                    .doesNotBlockMovement()
+                                    .hardnessAndResistance(100.0F)
                                     .noDrops(),
                             SubstanceCatalog.BORON,
                             ModBlocks.SOLID_BORON
@@ -133,9 +133,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOLID_BORON =
             BLOCKS.register("solid_boron",
                     () -> new SolidSubstanceBlock(
-                            Block.Properties.of(Material.STONE)
-                                    .strength(0.5F)
-                                    .requiresCorrectToolForDrops(),
+                            Block.Properties.create(Material.ROCK)
+                                    .hardnessAndResistance(0.5F)
+                                    .setRequiresTool(),
                             SubstanceCatalog.BORON,
                             ModBlocks.BORON
                     )
@@ -145,9 +145,9 @@ public class ModBlocks {
             BLOCKS.register("carbon",
                     () -> new EvaporatingFluidBlock(
                             ModFluids.CARBON,
-                            Block.Properties.of(Material.WATER)
-                                    .noCollission()
-                                    .strength(100.0F)
+                            Block.Properties.create(Material.WATER)
+                                    .doesNotBlockMovement()
+                                    .hardnessAndResistance(100.0F)
                                     .noDrops(),
                             SubstanceCatalog.CARBON,
                             () -> Blocks.COAL_BLOCK
