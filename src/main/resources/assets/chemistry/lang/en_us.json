@@ -33,7 +33,12 @@
   "item.chemistry.boron_bucket": "Boron Bucket",
   "block.chemistry.solid_boron": "Block of Boron",
   "item.chemistry.solid_boron_item": "Boron Powder",
-  "block.chemistry.lithium": "Liquid Boron",
-  "fluid.chemistry.lithium": "Liquid Boron",
-  "gas.chemistry.boron": "Boron"
+  "block.chemistry.boron": "Liquid Boron",
+  "fluid.chemistry.boron": "Liquid Boron",
+  "gas.chemistry.boron": "Boron",
+
+  "item.chemistry.carbon_bucket": "Carbon Bucket",
+  "block.chemistry.carbon": "Liquid Carbon",
+  "fluid.chemistry.carbon": "Liquid Carbon",
+  "gas.chemistry.carbon": "Carbon"
 }

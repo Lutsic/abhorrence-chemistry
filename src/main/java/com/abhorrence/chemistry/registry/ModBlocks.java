@@ -5,6 +5,7 @@ import com.abhorrence.chemistry.ChemistryMod;
 import com.abhorrence.chemistry.block.SolidSubstanceBlock;
 import com.abhorrence.chemistry.substance.SubstanceCatalog;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.FlowingFluidBlock;
 import com.abhorrence.chemistry.block.EvaporatingFluidBlock;
 import net.minecraft.block.material.Material;
@@ -137,6 +138,19 @@ public class ModBlocks {
                                     .requiresCorrectToolForDrops(),
                             SubstanceCatalog.BORON,
                             ModBlocks.BORON
+                    )
+            );
+
+    public static final RegistryObject<FlowingFluidBlock> CARBON =
+            BLOCKS.register("carbon",
+                    () -> new EvaporatingFluidBlock(
+                            ModFluids.CARBON,
+                            Block.Properties.of(Material.WATER)
+                                    .noCollission()
+                                    .strength(100.0F)
+                                    .noDrops(),
+                            SubstanceCatalog.CARBON,
+                            () -> Blocks.COAL_BLOCK
                     )
             );
 }

@@ -178,4 +178,15 @@ public class ModItems {
                                     .tab(ModItemGroups.CHEMISTRY)
                     )
             );
+
+    public static final RegistryObject<Item> CARBON_BUCKET =
+            ITEMS.register("carbon_bucket",
+                    () -> new BucketItem(
+                            ModFluids.CARBON,
+                            new Item.Properties()
+                                    .craftRemainder(Items.BUCKET)
+                                    .stacksTo(1)
+                                    .tab(ModItemGroups.CHEMISTRY)
+                    )
+            );
 }

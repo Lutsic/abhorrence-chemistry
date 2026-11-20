@@ -33,7 +33,12 @@
   "item.chemistry.boron_bucket": "Ведро бора",
   "block.chemistry.solid_boron": "Блок бора",
   "item.chemistry.solid_boron_item": "Порошок бора",
-  "block.chemistry.lithium": "Жидкий бор",
-  "fluid.chemistry.lithium": "Жидкий бор",
-  "gas.chemistry.boron": "Бор"
+  "block.chemistry.boron": "Жидкий бор",
+  "fluid.chemistry.boron": "Жидкий бор",
+  "gas.chemistry.boron": "Бор",
+
+  "item.chemistry.carbon_bucket": "Ведро углерода",
+  "block.chemistry.carbon": "Жидкий углерод",
+  "fluid.chemistry.carbon": "Жидкий углерод",
+  "gas.chemistry.carbon": "Углерод"
 }

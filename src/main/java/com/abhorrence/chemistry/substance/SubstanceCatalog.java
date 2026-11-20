@@ -73,6 +73,18 @@ public class SubstanceCatalog {
             )
     );
 
+    public static final Substance CARBON = register(
+            new Substance(
+                    new ResourceLocation("chemistry", "carbon"),
+                    "Carbon",
+                    "C",
+                    3823,
+                    4000,
+                    ModGases.CARBON,
+                    new ThermalProperties(40, 1)
+            )
+    );
+
     public static final Substance OXYGEN = register(
             new Substance(
                     new ResourceLocation("chemistry", "oxygen"),

@@ -27,6 +27,11 @@ public class ModGases {
                     new Gas(GasBuilder.builder().color(0xd4d2c9))
             );
 
+    public static final RegistryObject<Gas> CARBON =
+            GASES.register("carbon", () ->
+                    new Gas(GasBuilder.builder().color(0x2b2b2b))
+            );
+
     public static final RegistryObject<Gas> OXYGEN =
             GASES.register("oxygen", () ->
                     new Gas(GasBuilder.builder().color(0x80BFFF))

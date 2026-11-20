@@ -201,4 +201,41 @@ public class ModFluids {
                 .block(ModBlocks.BORON)
                 .bucket(ModItems.BORON_BUCKET);
     }
+
+    public static final ResourceLocation CARBON_STILL_TEXTURE =
+            new ResourceLocation(ChemistryMod.MOD_ID, "fluid/liquid");
+
+    public static final ResourceLocation CARBON_FLOWING_TEXTURE =
+            new ResourceLocation(ChemistryMod.MOD_ID, "fluid/liquid_flow");
+
+    public static final RegistryObject<FlowingFluid> CARBON =
+            FLUIDS.register("carbon",
+                    () -> new ForgeFlowingFluid.Source(
+                            carbonProperties()
+                    )
+            );
+
+    public static final RegistryObject<FlowingFluid> FLOWING_CARBON =
+            FLUIDS.register("flowing_carbon",
+                    () -> new ForgeFlowingFluid.Flowing(
+                            carbonProperties()
+                    )
+            );
+
+    private static ForgeFlowingFluid.Properties carbonProperties() {
+        return new ForgeFlowingFluid.Properties(
+                CARBON,
+                FLOWING_CARBON,
+                FluidAttributes.builder(
+                                CARBON_STILL_TEXTURE,
+                                CARBON_FLOWING_TEXTURE
+                        )
+                        .density(71)
+                        .temperature(14)
+                        .viscosity(100)
+                        .color(0xFF2b2b2b)
+        )
+                .block(ModBlocks.CARBON)
+                .bucket(ModItems.CARBON_BUCKET);
+    }
 }
